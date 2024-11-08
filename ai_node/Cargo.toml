@@ -1,0 +1,14 @@
+[package]
+name = "ai_node"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+reqwest = "0.11"
+web3 = "0.15"
+log = "0.4"
+futures = "0.3"
+rust-crypto = "0.2.36"
+ndarray = "0.15"  # For numerical operations
