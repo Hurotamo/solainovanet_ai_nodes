@@ -2,7 +2,7 @@ use web3::futures::StreamExt;
 use web3::types::FilterBuilder;
 
 pub async fn collect_dapp_interaction_data() {
-    let transport = web3::transports::Http::new("https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID").unwrap();
+    let transport = web3::transports::Http::new("https://sepolia.infura.io/v3/609f442bf0e14fa08396c80f39b1a592").unwrap();
     let web3 = web3::Web3::new(transport);
 
     let filter = FilterBuilder::default().build();
@@ -17,7 +17,7 @@ pub async fn collect_dapp_interaction_data() {
 }
 
 pub async fn collect_transaction_data() {
-    let transport = web3::transports::Http::new("https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID").unwrap();
+    let transport = web3::transports::Http::new("https://sepolia.infura.io/v3/609f442bf0e14fa08396c80f39b1a592").unwrap();
     let web3 = web3::Web3::new(transport);
 
     let block_number = web3.eth().block_number().await.unwrap();
