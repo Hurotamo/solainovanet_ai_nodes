@@ -2,4 +2,6 @@
 
 
 
-multi-chain nodes
+multi-chain nodes 
+Leveraging the PEAQ SDKs
+
